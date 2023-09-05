@@ -162,9 +162,9 @@ body {
 /* card */
 #card {
     aspect-ratio: 3/4;
-    width: 15%;
+    width: 10%;
     position: absolute;
-    top: 20%;
+    top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
