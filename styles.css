@@ -1,0 +1,177 @@
+* {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    user-select: none;
+    box-sizing: border-box;
+    color: white;
+    
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+:root {
+    --element-height: 100%/9;
+    --element-width: 100%/18;
+    font-size: 8px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    background-color: black;
+}
+
+#title {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#table {
+    overflow: hidden;
+    flex: 6;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    justify-content: stretch;
+    align-items: flex-end;
+    height: 69%;
+    width: 69%;
+}
+
+#container2 {
+    height: 45%;
+    width: 69%;
+}
+
+.column {
+    width: calc(99.9%/18);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 1px;
+}
+
+.element {
+    aspect-ratio: 1/1;
+    width: 100%;
+    background: rgb(28, 111, 38);
+    border-radius: 10%;
+    margin: 1px; 
+    font-size: 16%;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    border: 2px solid rgb(0, 0, 0);
+}
+.element1 {
+    aspect-ratio: 1/1;
+    width: 100%;
+    background: rgb(218, 197, 33);
+    border-radius: 10%;
+    margin: 1px; 
+    font-size: 16%;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    border: 2px solid rgb(0, 0, 0);
+}
+.element1 .number { 
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+}
+.element1 .symbol {
+    font-size: 20px;
+}
+
+.element2 {
+    width: calc(99.9%/18);
+    aspect-ratio: 1/1;
+    background: rgb(91, 91, 91);
+    border-radius: 10%;
+    margin: 1px;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.row {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    margin: 1px;
+}
+
+.row.one {
+    margin-top: 5%;
+}
+.element .number { 
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+}
+.element .symbol {
+    font-size: 20px;
+}
+.element2 .number2 {
+    font-size: 8px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.element2 .symbol2 {
+    font-size: 20px;
+}
+
+.element:hover, .element1:hover, .element2:hover {
+    border: 1px solid white;
+    opacity: 90%;
+    cursor: pointer;
+}
+
+.element:active, .element1:active, .element2:active {
+    opacity: 70%;
+}
+
+/* card */
+#card {
+    aspect-ratio: 3/4;
+    width: 15%;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-text-stroke: 1px black;
+}
+
+#card > p:nth-child(1) {
+    font-size: 12rem;
+}
